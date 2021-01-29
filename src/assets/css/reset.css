@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'comic';
+  src: url('./fonts/comic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: 'comic', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: linear-gradient(94.6deg, #EAFFBE 4.6%, #E0F4D6 97.15%);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button, input, select, textarea {
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  outline: none;
+  font-family: 'comic', sans-serif;
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+}

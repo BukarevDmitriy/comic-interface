@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Comic interface</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="app-container">
+        <div class="header-title">Interface for viewing comics</div>
+      </div>
+    </header>
+
+    <div class="app-container">
+      <div class="comic-wrapper">
+        <h1 class="comic-title"></h1>
+
+        <div class="comic-image">
+          <img
+            src=""
+            alt=""
+          >
+        </div>
+
+        <div class="comic-description"></div>
+
+        <div class="control-buttons">
+          <button class="to-begin-button-js control-button">В начало</button>
+
+          <button class="random-button-js control-button">Случайный</button>
+
+          <button class="to-end-button-js control-button">В конец</button>
+        </div>
+
+        <button class="prev-button round-button">
+          <img src="<%=require('@/assets/icons/arrow.svg')%>" alt="prev button">
+        </button>
+        <button class="next-button round-button">
+          <img src="<%=require('@/assets/icons/arrow.svg')%>" alt="next button">
+        </button>
+
+        <div class="notification"></div>
+      </div>
+    </div>
+  </body>
+</html>
