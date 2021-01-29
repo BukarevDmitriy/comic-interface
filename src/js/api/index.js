@@ -11,5 +11,7 @@ export default async (id) => {
     throw new Error(`Could not fetch ${url}, received ${res.status}`);
   }
 
-  await res.json();
+  const data = await res.json();
+
+  return data;
 };
