@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'comic';
+  src: url(fonts/comic.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: 'comic', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: linear-gradient(94.6deg, #EAFFBE 4.6%, #E0F4D6 97.15%);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button, input, select, textarea {
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  outline: none;
+  font-family: 'comic', sans-serif;
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+}
+
+.comic-wrapper {
+  position: relative;
+  margin-top: 40px;
+  padding: 20px 80px 30px;
+  background: #FFF;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.comic-title {
+  margin-bottom: 10px;
+}
+
+.comic-image {
+  margin-bottom: 20px;
+}
+
+.comic-description {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.control-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.control-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #558B2F;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+.control-button:hover {
+  background: #C5E1A5;
+}
+.control-button:active {
+  background: #689F38;
+}
+
+.round-button {
+  position: absolute;
+  top: calc(50% - 25px);
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  background: #FFF;
+  border: 2px solid #B0B1B2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+.round-button:disabled {
+  opacity: 0.5;
+}
+.round-button:hover:enabled {
+  background: #C9CACC;
+}
+.round-button:active:enabled {
+  background: #B0B1B2;
+}
+.prev-button {
+  left: -25px;
+}
+.prev-button img {
+  transform: rotate(180deg);
+}
+.next-button {
+  right: -25px;
+}
+
+.header {
+  height: 75px;
+  background: #E5F1FF;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
+}
+
+.app-container {
+  width: 780px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.notification {
+  opacity: 0;
+  position: fixed;
+  right: 30px;
+  top: 100px;
+  width: 300px;
+  z-index: 10000;
+  background-color: #EF5350;
+  padding: 10px 10px;
+  margin: 0 0 10px 0;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  text-align: center;
+  transition: opacity 0.5s;
+}
+
+.notification.notification-show {
+  display: block;
+  opacity: 1;
+}
+
+
+
+/*# sourceMappingURL=main-69b60680.css.map*/
