@@ -13,8 +13,8 @@ import {
   toBeginButton,
   toEndButton,
 } from '@/js/elements';
-import { checkButton, randomInteger } from '@/js/helpers';
-import { BEGIN_COMIC_NUMBER, END_COMIC_NUMBER, ERROR_SHOW_TIME } from '@/js/const';
+import { getButtonElement, randomInteger } from '@/js/helpers';
+import { BEGIN_COMIC_NUMBER, END_COMIC_NUMBER, NOTIFICATION_SHOW_TIME } from '@/js/const';
 
 let currentComicId;
 
@@ -30,7 +30,7 @@ const renderNotification = (message) => {
 
   setTimeout(() => {
     notification.classList.remove('notification-show');
-  }, ERROR_SHOW_TIME);
+  }, NOTIFICATION_SHOW_TIME);
 };
 
 const checkRoundButtons = () => {
@@ -59,7 +59,7 @@ const onButtonClick = (button) => {
 };
 
 const onClickPrevButton = (e) => {
-  const button = checkButton(e);
+  const button = getButtonElement(e);
 
   button.disabled = true;
   currentComicId -= currentComicId;
@@ -72,7 +72,7 @@ const onClickPrevButton = (e) => {
 };
 
 const onClickNextButton = (e) => {
-  const button = checkButton(e);
+  const button = getButtonElement(e);
 
   button.disabled = true;
   currentComicId += 1;

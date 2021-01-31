@@ -6,7 +6,7 @@ export const randomInteger = (min = BEGIN_COMIC_NUMBER, max = END_COMIC_NUMBER) 
   return Math.round(rand);
 };
 
-export const checkButton = (e) => {
+export const getButtonElement = (e) => {
   if (e.target.tagName === 'IMG') {
     return e.target.parentNode;
   }
